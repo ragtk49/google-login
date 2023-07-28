@@ -2,11 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { useSelector } from 'react-redux';
+import { mobile } from '../responsive';
 
 
 const Container =  styled.div`
     height: 60px;
     background-color: black;
+    ${mobile({display: "none"})}
 `
 
 const Wrapper = styled.div`
